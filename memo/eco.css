@@ -1,0 +1,48 @@
+.details {
+  width: 30%;
+}
+
+.bold {
+  font-size: medium;
+  font-weight: bold;
+}
+.red {
+  font-weight: bold;
+  color: red;
+}
+
+input {
+  padding: 2px;
+  margin: 0.5px;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  border: solid skyblue 2px;
+}
+
+.short {
+  width: 10%;
+}
+#x12,
+#x13,
+#x16,
+#x17 {
+  border: 2px solid grey;
+  background-color: grey;
+}
+
+#x4,
+#x7,
+#x10,
+#x14,
+#x15,
+#x18,
+#x21,
+#x24 {
+  color: red;
+}
+.double {
+  width: 8.15%;
+}

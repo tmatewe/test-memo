@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="eco.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>National Income & Production Acc</h2>
+      <input
+        type="text"
+        class="details"
+        value="Compensation of employees"
+      /><input type="text" id="x1" /><br />
+      <input type="text" class="details" value="Net operating surplus" /><input
+        type="text"
+        id="x2"
+      />
+      <br />
+      <input
+        type="text"
+        class="details"
+        value="Compensation of fixed capital"
+      /><input type="text" id="x3" /><br />
+      <input
+        type="text"
+        class="details bold"
+        value="Gross value added at factor cost"
+      /><input type="text" id="x4" /><br />
+      <input
+        type="text"
+        class="details"
+        value="other taxes on production"
+      /><input type="text" id="x5" /><br />
+      <input
+        type="text"
+        class="details"
+        value="less:other subsidies on production"
+      /><input type="text" id="x6" /><br />
+      <input
+        type="text"
+        class="details bold"
+        value="Gross value added at basic prices"
+      /><input type="text" id="x7" /><br />
+      <input type="text" class="details" value="Taxes on production" /><input
+        type="text"
+        id="x8"
+      /><br />
+      <input
+        type="text"
+        class="details"
+        value="less:subsidies on production"
+      /><input type="text" id="x9" /><br />
+      <input
+        type="text"
+        class="details bold"
+        value="Gross domestic product at market prices"
+      /><input type="text" id="x10" /><br />
+      <input
+        type="text"
+        class="details"
+        value="Compensation expenditure by households"
+      /><input type="text" id="x11" /><br />
+      <input
+        type="text"
+        class="details"
+        value="Compensation expenditure by general gvt"
+      /><input type="text" id="x12" /><br />
+      <input
+        type="text"
+        class="details"
+        value="..........Individual consuption expenditure"
+      /><input type="text" id="x121" /><br />
+      <input
+        type="text"
+        class="details"
+        value="..........Collection consumption expenditure"
+      /><input type="text" id="x122" /><br />
+      <input
+        type="text"
+        class="details"
+        value="Gross capital formation"
+      /><input type="text" id="x13" /><br />
+      <input
+        type="text"
+        class="details"
+        value="..........Gross fixed capitalformation"
+      /><input type="text" id="x131" /><br />
+      <input
+        type="text"
+        class="details"
+        value="..........Change in inventories"
+      /><input type="text" id="x132" /><br />
+      <input type="text" class="details red" value="Residual item" /><input
+        type="text"
+        id="x14"
+      /><br />
+      <input
+        type="text"
+        class="details bold"
+        value="Gross domestic expenditure"
+      /><input type="text" id="x15" /><br />
+      <input
+        type="text"
+        class="details"
+        value="Export of goods and services"
+      /><input type="text" id="x16" /><br />
+      <input
+        type="text"
+        class="details"
+        value="..........Export of goods,free on board"
+      /><input type="text" id="x161" /><br />
+      <input
+        type="text"
+        class="details"
+        value="..........Export of services"
+      /><input type="text" id="x162" /><br />
+      <input
+        type="text"
+        class="details"
+        value="less:imports of goods and services"
+      /><input type="text" id="x17" /><br />
+      <input
+        type="text"
+        class="details"
+        value="..........Imports of goods ,free on board"
+      /><input type="text" id="x171" /><br />
+      <input
+        type="text"
+        class="details"
+        value="..........Imports of services"
+      /><input type="text" id="x172" /><br />
+      <input
+        type="text"
+        class="details bold"
+        value="Expenditure on gross product"
+      /><input type="text" id="x18" /><br />
+      <input
+        type="text"
+        class="details"
+        value="Primary income froom the rest of the world"
+      /><input type="text" id="x19" /><br />
+      <input
+        type="text"
+        class="details"
+        value="less:Primary income to the rest of the world"
+      /><input type="text" id="x20" /><br />
+      <input
+        type="text"
+        class="details bold"
+        value="Gross national income at market prices"
+      /><input type="text" id="x21" /><br />
+      <input
+        type="text"
+        class="details"
+        value="Current tranfers from the rest of the world"
+      /><input type="text" id="x22" /><br />
+      <input
+        type="text"
+        class="details"
+        value="less:Current transfers to the rest of the world"
+      /><input type="text" id="x23" /><br />
+      <input
+        type="text"
+        class="details bold"
+        value="Gross national income at market prices "
+      /><input type="text" id="x24" /><br /><br />
+      <button class="btn btn-info">Answers</button><br /><br />
+      <h2>GDP TABLE</h2>
+      <input type="text" value="Year" class="short" /><input
+        type="text"
+        value="Nominal GDP"
+        class="short"
+      /><input type="text" value="real GDP" class="short" /><input
+        type="text"
+        value="Price index"
+        class="short"
+      /><input type="text" value="Inflation rate" class="short" /><input
+        type="text"
+        value="Growth rate"
+        class="short"
+      />
+      <br />
+      <input type="text" value="Year1" class="short" /><input
+        type="text"
+        id="nominal1"
+        class="short"
+      /><input type="text" id="real1" class="short" /><input
+        type="text"
+        id="priceIndex1"
+        class="short"
+      /><input type="text" value="-" id="inflationRate1" class="short" /><input
+        type="text"
+        value="-"
+        id="growthRate1"
+        class="short"
+      />
+      <br />
+      <input type="text" value="Year2" class="short" /><input
+        type="text"
+        id="nominal2"
+        class="short"
+      /><input type="text" id="real2" class="short" /><input
+        type="text"
+        id="priceIndex2"
+        class="short"
+      /><input type="text" id="inflationRate2" class="short" /><input
+        type="text"
+        id="growthRate2"
+        class="short"
+      />
+      <br />
+      <input type="text" value="Year3" class="short" /><input
+        type="text"
+        id="nominal3"
+        class="short"
+      /><input type="text" id="real3" class="short" /><input
+        type="text"
+        id="priceIndex3"
+        class="short"
+      /><input type="text" id="inflationRate3" class="short" /><input
+        type="text"
+        id="growthRate3"
+        class="short"
+      />
+      <br /><br />
+      <button class="btn btn-info">GDP</button><br /><br />
+      <input type="text" class="short" value="Qty 2010" /><input
+        type="text"
+        class="short"
+        value="Price 2010"
+      /><input type="text" class="short" value="Qty 2019" /><input
+        type="text"
+        class="short"
+        value="Price 2019"
+      />
+      <br />
+      <input type="text" class="short" id="qtyPre1" /><input
+        type="text"
+        class="short"
+        id="pricePre1"
+      /><input type="text" class="short" id="qtyCur1" /><input
+        type="text"
+        class="short"
+        id="priceCur1"
+      />
+      <br />
+      <input type="text" class="short" id="qtyPre2" /><input
+        type="text"
+        class="short"
+        id="pricePre2"
+      /><input type="text" class="short" id="qtyCur2" /><input
+        type="text"
+        class="short"
+        id="priceCur2"
+      />
+      <br />
+      <input type="text" class="short" id="qtyPre3" /><input
+        type="text"
+        class="short"
+        id="pricePre3"
+      /><input type="text" class="short" id="qtyCur3" /><input
+        type="text"
+        class="short"
+        id="priceCur3"
+      />
+      <br />
+      <br />
+      <button class="btn btn-info">Click</button><br />
+      <br />
+      <input type="type" value="nominalGDP2010" /><input
+        type="text"
+        id="nominal2010"
+      />
+      <br />
+      <br />
+      <input type="type" value="realGDP2010" /><input
+        type="text"
+        id="real2010"
+      />
+      <br />
+      <br />
+      <input type="type" value="nominalGDP2020" /><input
+        type="text"
+        id="nominal2020"
+      />
+      <br />
+      <br />
+
+      <input type="type" value="realGDP2020" /><input
+        type="text"
+        id="real2020"
+      />
+      <br />
+      <br />
+      <h2>UNEMPLOYEMENT TABLE</h2>
+      <input type="text" /><input
+        type="text"
+        class="short"
+        value="Year 1"
+      /><input type="text" class="short" value="Year 2 " /><input
+        type="text"
+        class="short"
+        value="Year 3"
+      />
+      <br />
+      <input type="text" value="Population" /><input
+        type="text"
+        class="short"
+        id="population1"
+      /><input type="text" class="short" id="population2" /><input
+        type="text"
+        class="short"
+        id="population3"
+      />
+      <br />
+      <input type="text" value="Labour force" /><input
+        type="text"
+        class="short"
+        id="labourForce1"
+      /><input type="text" class="short" id="labourForce2" /><input
+        type="text"
+        class="short"
+        id="labourForce3"
+      />
+      <br />
+      <input type="text" value="Employed" /><input
+        type="text"
+        class="short"
+        id="employed1"
+      /><input type="text" class="short" id="employed2" /><input
+        type="text"
+        class="short"
+        id="employed3"
+      />
+      <br />
+      <input type="text" value="Unemployed" /><input
+        type="text"
+        class="short"
+        id="unemployed1"
+      /><input type="text" class="short" id="unemployed2" /><input
+        type="text"
+        class="short"
+        id="unemployed3"
+      />
+      <br />
+      <br />
+      <button class="btn btn-info">Get</button><br />
+      <br />
+      <input type="text" value="Unemployment rate" /><input
+        type="text"
+        class="short"
+        id="unemploymentRate1"
+      /><input type="text" class="short" id="unemploymentRate2" /><input
+        type="text"
+        class="short"
+        id="unemploymentRate3"
+      />
+      <br />
+      <input type="text" value="AbsorptionRate" /><input
+        type="text"
+        class="short"
+        id="absorptionRate1"
+      /><input type="text" class="short" id="absorptionRate2" /><input
+        type="text"
+        class="short"
+        id="absorptionRate3"
+      />
+      <br />
+      <input type="text" value="Labour force participation rate" /><input
+        type="text"
+        class="short"
+        id="participationRate1"
+      /><input type="text" class="short" id="participationRate2" /><input
+        type="text"
+        class="short"
+        id="participationRate3"
+      />
+      <br />
+      <br />
+      <h2>PERCENTAGE CHANGE</h2>
+      <input type="text" value="Previous Amount" /><input
+        type="text"
+        value="Currrent Amount"
+      />
+      <br />
+      <input type="text" id="previousAmount" /><input
+        type="text"
+        id="currentAmount"
+      />
+      <br />
+      <br />
+      <button class="btn btn-info">Percentage</button
+      ><input type="text" id="percentageAnswer" />
+      <br />
+      <br />
+      <h2>INTERNATIONAL TRADE</h2>
+      <input type="text" value="Country" />
+      <input type="text" placeholder="Enter first product" id="firstProduct" />
+      <input
+        type="text"
+        placeholder="Enter second product"
+        id="secondProduct"
+      />
+      <br />
+      <input type="text" placeholder="Enter first country" id="firstCountry" />
+      <input type="text" id="product1" />
+      <input type="text" id="product2" /> <br />
+      <input
+        type="text"
+        placeholder="Enter second country"
+        id="secondCountry"
+      />
+      <input type="text" id="productOne" />
+      <input type="text" id="productTwo" /> <br /><br />
+      <button class="btn btn-info">Info</button><br />
+      <br />
+      <h4 id="production1"></h4>
+      <input type="text" id="country1" />
+      <input type="text" id="result1" /> <br /><input
+        type="text"
+        id="country2"
+      />
+      <input type="text" id="result2" />
+      <h4 id="production2"></h4>
+      <input type="text" id="countryOne" /><input
+        type="text"
+        id="resultOne"
+      /><br />
+      <input type="text" id="countryTwo" /><input
+        type="text"
+        id="resultTwo"
+      /><br /><br />
+      <h4>More information</h4>
+      <p id="moreInfo"></p>
+      <br /><br />
+      <h2>VALUE EDDED</h2>
+      <input type="text" value="Production method" /><input
+        type="text"
+        value="Income method"
+      />
+      <br />
+      <input type="text" class="double" value="Farmer" /><input
+        type="text"
+        id="farmer"
+        class="double"
+        value="270000"
+      />
+      <input type="text" class="double" value="rent" /><input
+        type="text"
+        class="double"
+        id="rent"
+      />
+      <br />
+      <input type="text" value="Koo" class="double" /><input
+        type="text"
+        id="koo"
+        class="double"
+      />
+      <input type="text" value="wages" class="double" /><input
+        type="text"
+        id="wages"
+        class="double"
+        value="210000"
+      />
+      <br />
+      <input type="text" value="shoprite" class="double" /><input
+        type="text"
+        id="shoprite"
+        class="double"
+      />
+      <input type="text" value="profit" class="double" /><input
+        type="text"
+        id="profit"
+        class="double"
+      />
+      <br />
+      <input type="text" value="Total" class="double" /><input
+        type="text"
+        id="t1"
+        class="double"
+      />
+      <input type="text" class="double" value="Total" /><input
+        type="text"
+        class="double"
+        id="t2"
+        value="1350000"
+      />
+      <br />
+      <br />
+      <button class="btn btn-info">Complete</button><br /><br />
+    </div>
+    <script src="eco.js"></script>
+  </body>
+</html>
