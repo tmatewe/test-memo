@@ -144,7 +144,7 @@ function myClick(e) {
       ((Number(currentAmount.value) - Number(previousAmount.value)) /
         Number(previousAmount.value)) *
       100
-    ).toFixed(1);
+    ).toFixed(2);
   } else if (e.target.innerHTML === "Info") {
     country1.value = firstCountry.value;
     country2.value = secondCountry.value;
@@ -186,6 +186,12 @@ function myClick(e) {
       Number(productOne.value) > Number(product1.value)
     ) {
       moreInfo.innerHTML = `${secondCountry.value} has both an absolute advantage and a comparative advantage in the product of ${firstProduct.value}`;
+    } else if (
+      Number(product2.value) / Number(product1.value) >
+        Number(productTwo.value) / Number(productOne.value) &&
+      Number(productOne.value) < Number(product1.value)
+    ) {
+      moreInfo.innerHTML = `${firstCountry.value} has an absolute advantage in the production of ${firstProduct.value} but ${secondCountry.value} has a comparative advantage in the product of ${firstProduct.value}`;
     } else {
       alert("Tawaz you ddnt add this option");
     }
