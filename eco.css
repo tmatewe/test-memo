@@ -13,17 +13,13 @@
 
 input {
   padding: 2px;
-  margin: 0.5px;
-  border-radius: 10%;
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
-  -ms-border-radius: 10%;
-  -o-border-radius: 10%;
-  border: solid skyblue 2px;
+  margin: 1px;
+  border-radius: 5%;
+  border: 1px solid #eee;
 }
 
 .short {
-  width: 10%;
+  width: 15%;
 }
 #x12,
 #x13,
@@ -44,5 +40,8 @@ input {
   color: red;
 }
 .double {
-  width: 8.15%;
+  width: 9%;
+}
+.btn-outline-dark {
+  width: 200px;
 }

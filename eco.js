@@ -4,7 +4,7 @@ for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", myClick);
 }
 function myClick(e) {
-  if (e.target.innerHTML === "Answers") {
+  if (e.target.value === "Answers") {
     x4.value = Number(x1.value) + Number(x2.value) + Number(x3.value);
     x7.value = Number(x4.value) + Number(x5.value) - Number(x6.value);
     x10.value = Number(x7.value) + Number(x8.value) - Number(x9.value);
@@ -29,7 +29,7 @@ function myClick(e) {
       Number(x13.value);
     x21.value = Number(x18.value) + Number(x19.value) - Number(x20.value);
     x24.value = Number(x21.value) + Number(x22.value) - Number(x23.value);
-  } else if (e.target.innerHTML === "GDP") {
+  } else if (e.target.value === "GDP") {
     if (nominal1.value === "") {
       nominal1.value = (
         (Number(real1.value) * Number(priceIndex1.value)) /
@@ -82,7 +82,7 @@ function myClick(e) {
       ((Number(real3.value) - Number(real2.value)) / Number(real2.value)) *
       100
     ).toFixed(1);
-  } else if (e.target.innerHTML === "Click") {
+  } else if (e.target.value === "Click") {
     nominal2010.value =
       Number(qtyPre1.value) * Number(pricePre1.value) +
       Number(qtyPre2.value) * Number(pricePre2.value) +
@@ -102,7 +102,7 @@ function myClick(e) {
       Number(qtyCur1.value) * Number(pricePre1.value) +
       Number(qtyCur2.value) * Number(pricePre2.value) +
       Number(qtyCur3.value) * Number(pricePre3.value);
-  } else if (e.target.innerHTML === "Get") {
+  } else if (e.target.value === "Get") {
     unemploymentRate1.value = (
       (Number(unemployed1.value) / Number(labourForce1.value)) *
       100
@@ -139,13 +139,13 @@ function myClick(e) {
       (Number(labourForce3.value) / Number(population3.value)) *
       100
     ).toFixed(1);
-  } else if (e.target.innerHTML === "Percentage") {
+  } else if (e.target.value === "Percentage") {
     percentageAnswer.value = (
       ((Number(currentAmount.value) - Number(previousAmount.value)) /
         Number(previousAmount.value)) *
       100
     ).toFixed(2);
-  } else if (e.target.innerHTML === "Info") {
+  } else if (e.target.value === "Info") {
     country1.value = firstCountry.value;
     country2.value = secondCountry.value;
     countryOne.value = firstCountry.value;
@@ -195,7 +195,7 @@ function myClick(e) {
     } else {
       alert("Tawaz you ddnt add this option");
     }
-  } else if (e.target.innerHTML === "Complete") {
+  } else if (e.target.value === "Complete") {
     koo.value = farmer.value;
     t1.value = t2.value;
     shoprite.value =
