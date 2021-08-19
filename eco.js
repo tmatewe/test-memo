@@ -203,3 +203,21 @@ function myClick(e) {
     profit.value = Number(t2.value) - Number(rent.value) - Number(wages.value);
   }
 }
+
+// tax calculations
+let form=document.querySelector("form")
+
+
+
+form.addEventListener("click",(e)=>{
+    e.preventDefault()
+    console.log(e.target.innerHTML)
+    if(e.target.innerHTML=="Tax"){
+    console.log(form.tax.value)
+    form.tax.value=(((Number(form.salary.value)-Number(form.minAmount.value))*Number(form.taxRate.value))+Number(form.basic.value))
+    }else if(e.target.innerHTML=="Effective Tax"){
+    form.effectiveRate.value=(Number(form.tax.value)/Number(form.salary.value)*100).toFixed(2)
+    }
+}
+    
+)
