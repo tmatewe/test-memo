@@ -205,19 +205,47 @@ function myClick(e) {
 }
 
 // tax calculations
-let form=document.querySelector("form")
+let form = document.querySelector("form");
 
-
-
-form.addEventListener("click",(e)=>{
-    e.preventDefault()
-    console.log(e.target.innerHTML)
-    if(e.target.innerHTML=="Tax"){
-    console.log(form.tax.value)
-    form.tax.value=(((Number(form.salary.value)-Number(form.minAmount.value))*Number(form.taxRate.value))+Number(form.basic.value))
-    }else if(e.target.innerHTML=="Effective Tax"){
-    form.effectiveRate.value=(Number(form.tax.value)/Number(form.salary.value)*100).toFixed(2)
-    }
-}
-    
-)
+form.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log(e.target.innerHTML);
+  if (e.target.innerHTML == "Tax") {
+    console.log(form.tax.value);
+    form.tax.value =
+      (Number(form.salary.value) - Number(form.minAmount.value)) *
+        Number(form.taxRate.value) +
+      Number(form.basic.value);
+  } else if (e.target.innerHTML == "Effective Tax") {
+    form.effectiveRate.value = (
+      (Number(form.tax.value) / Number(form.salary.value)) *
+      100
+    ).toFixed(2);
+  } else if (e.target.innerHTML == "Point@pre") {
+    form.preAns.value = (
+      ((Number(form.curQty.value) - Number(form.preQty.value)) /
+        Number(form.preQty.value) /
+        ((Number(form.curPrice.value) - Number(form.prePrice.value)) /
+          Number(form.prePrice.value))) *
+      -1
+    ).toFixed(2);
+  } else if (e.target.innerHTML == "Point@cur") {
+    form.curAns.value = (
+      ((Number(form.curQty.value) - Number(form.preQty.value)) /
+        Number(form.curQty.value) /
+        ((Number(form.curPrice.value) - Number(form.prePrice.value)) /
+          Number(form.curPrice.value))) *
+      -1
+    ).toFixed(2);
+  } else {
+    form.arcAns.value = (
+      ((Number(form.curQty.value) - Number(form.preQty.value)) /
+        (Number(form.curQty.value) + Number(form.preQty.value)) /
+        2 /
+        ((Number(form.curPrice.value) - Number(form.prePrice.value)) /
+          (Number(form.curPrice.value) + Number(form.prePrice.value)) /
+          2)) *
+      -1
+    ).toFixed(2);
+  }
+});
